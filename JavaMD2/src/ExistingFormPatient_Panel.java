@@ -47,20 +47,20 @@ public class ExistingFormPatient_Panel extends JPanel {
 		btnCompletedForms.setBounds(243, 43, 155, 29);
 		add(btnCompletedForms);
 		
-		JLabel lblExisitingForms = new JLabel("Exisiting Forms");
+		JLabel lblExisitingForms = new JLabel("Existing Forms");
 		lblExisitingForms.setFont(new Font("Lucida Grande", Font.PLAIN, 22));
 		lblExisitingForms.setHorizontalAlignment(SwingConstants.CENTER);
 		lblExisitingForms.setBounds(78, 6, 285, 29);
 		add(lblExisitingForms);
 		
-		JButton btnHomepage = new JButton("Homepage");
+		JButton btnHomepage = new JButton("Back");
 		btnHomepage.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				setVisible(false);
 				MDGui.intializePatient();
 			}
 		});
-		btnHomepage.setBounds(150, 252, 117, 29);
+		btnHomepage.setBounds(150, 210, 117, 29);
 		add(btnHomepage);
 
 	}
