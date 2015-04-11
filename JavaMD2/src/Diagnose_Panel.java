@@ -37,8 +37,18 @@ public class Diagnose_Panel extends JPanel {
 				}
 			}
 		});
-		btnSubmit.setBounds(281, 250, 117, 29);
+		btnSubmit.setBounds(281, 220, 117, 29);
 		add(btnSubmit);
+                
+                JButton btnBack = new JButton("Back");
+		btnBack.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				setVisible(false);
+				MDGui.intializeDoctor();
+			}
+		});
+		btnBack.setBounds(281, 250, 117, 29);
+		add(btnBack);
 
 	}
 
