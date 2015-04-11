@@ -44,16 +44,16 @@ public class MDGui {
 	 * Create the application.
 	 */
 	public MDGui() {
-		initializeLogin();
+		frame = new JFrame();
+		frame.setBounds(100, 100, 450, 300);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                frame.add(new Login_Panel());
 	}
 
 	/**
 	 * Initialize the contents of the frame.
 	 */
-	private void initializeLogin() {
-		frame = new JFrame();
-		frame.setBounds(100, 100, 450, 300);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	public static void initializeLogin() {
 		frame.add(new Login_Panel());
 	}
 
