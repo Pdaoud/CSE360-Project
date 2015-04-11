@@ -18,7 +18,7 @@ public class DoctorHomePanel extends JPanel {
 		this.setLayout(new GridLayout(2,1));	// Set the Layout to a grid with 2 rows, 1 column
 		welcomeLabel = new JLabel("Welcome Doctor");	//Create welcomeLabel, with text in string.
 		welcomeLabel.setFont(welcomeLabel.getFont().deriveFont(64.0f)); //make font bigger
-		mainPA = new JLabel("Put something interesting here, possibly amount of pedning forms, some sort of status update?");	//Create mainPA, will write polite and informative PA
+		mainPA = new JLabel("Put something interesting here, possibly amount of pending forms, some sort of status update?");	//Create mainPA, will write polite and informative PA
 		top.add(welcomeLabel); //add component welcomeLabel to the top
 		bottom.add(mainPA);	//add component mainPA to the bottom		
 		
